@@ -1,1 +1,66 @@
-This is a barebones MDX site
+<Flex sx={{
+    width: 1440,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    p: 5,
+    margin: '0 auto'
+}}>
+
+## This is a barebones MDX site
+
+##### This is an embedded tweet
+
+<Box
+  sx={{
+    my: 4,
+  }}
+>
+  <Tweet
+    tweetLink="https://twitter.com/studio_hungry/status/1256343990061936640?s=20"
+    align="center"
+    theme="dark"
+  />
+</Box>
+
+##### These are some boxes
+
+<Flex
+  sx={{
+    flexDirection: "column",
+    width: 1440,
+    my: 4,
+  }}
+>
+  <Flex
+    sx={{
+      backgroundColor: "primary",
+      height: 100,
+      justifyContent: "center",
+      alignItems: "center",
+    }}
+  >
+    This is a box
+  </Flex>
+  <Flex
+    sx={{
+      backgroundColor: "highlight",
+      height: 100,
+      justifyContent: "center",
+      alignItems: "center",
+    }}
+  >
+    This is a box
+  </Flex>
+  <Flex
+    sx={{
+      backgroundColor: "secondary",
+      height: 100,
+      justifyContent: "center",
+      alignItems: "center",
+    }}
+  >
+    This is a box
+  </Flex>
+</Flex>
+
+</Flex>

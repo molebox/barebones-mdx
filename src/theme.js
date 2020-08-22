@@ -1,16 +1,7 @@
-export default 
-{
-  borders: [
-    "1px"
-  ],
-  borderStyles: [
-    "solid",
-    "dashed"
-  ],
-  borderWidths: [
-    1,
-    4
-  ],
+export default {
+  borders: ["1px"],
+  borderStyles: ["solid", "dashed"],
+  borderWidths: [1, 4],
   colors: {
     text: "#24292E",
     background: "#FFFFFF",
@@ -20,12 +11,12 @@ export default
     highlight: "#BBFFCD",
     gray: "#808080",
     accent: "#cee5ff",
-    darken: "#F7F7F7"
+    darken: "#F7F7F7",
   },
   fonts: {
     body: "system-ui, sans-serif",
     heading: "system-ui, sans-serif",
-    monospace: "Menlo, monospace"
+    monospace: "Menlo, monospace",
   },
   fontSizes: [
     "0.75rem",
@@ -35,17 +26,17 @@ export default
     "2.125rem",
     "3rem",
     "3.5rem",
-    "6rem"
+    "6rem",
   ],
   fontWeights: {
     body: 400,
     heading: 700,
-    bold: 700
+    bold: 700,
   },
   lettingSpacings: {},
   lineHeights: {
     heading: 1,
-    body: 1.5
+    body: 1.5,
   },
   radii: [],
   shadows: [
@@ -53,26 +44,19 @@ export default
     "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)",
     "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
     "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
-    "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)"
+    "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)",
   ],
   sizes: {
-    container: 1140
+    container: 1140,
   },
-  space: [
-    0,
-    4,
-    8,
-    16,
-    24,
-    32
-  ],
+  space: [0, 4, 8, 16, 24, 32],
   zIndices: [],
   breakpoints: [],
   styles: {
     root: {
       fontSize: 1,
       fontFamily: "body",
-      lineHeight: "body"
+      lineHeight: "body",
     },
     p: {
       color: "text",
@@ -80,14 +64,14 @@ export default
       code: {
         backgroundColor: "darken",
         color: "text",
-        padding: 1
-      }
+        padding: 1,
+      },
     },
     small: {
-      fontSize: 0
+      fontSize: 0,
     },
     a: {
-      color: "secondary"
+      color: "secondary",
     },
     h1: {
       color: "text",
@@ -97,8 +81,8 @@ export default
       marginTop: 0,
       marginBottom: 5,
       a: {
-        color: "inherit"
-      }
+        color: "inherit",
+      },
     },
     h2: {
       color: "text",
@@ -108,8 +92,8 @@ export default
       marginTop: 0,
       marginBottom: 4,
       a: {
-        color: "inherit"
-      }
+        color: "inherit",
+      },
     },
     h3: {
       color: "text",
@@ -119,8 +103,8 @@ export default
       marginTop: 0,
       marginBottom: 3,
       a: {
-        color: "inherit"
-      }
+        color: "inherit",
+      },
     },
     h4: {
       color: "text",
@@ -130,8 +114,8 @@ export default
       marginTop: 0,
       marginBottom: 3,
       a: {
-        color: "inherit"
-      }
+        color: "inherit",
+      },
     },
     h5: {
       color: "text",
@@ -141,8 +125,8 @@ export default
       marginTop: 0,
       marginBottom: 3,
       a: {
-        color: "inherit"
-      }
+        color: "inherit",
+      },
     },
     h6: {
       color: "text",
@@ -150,7 +134,7 @@ export default
       fontWeight: "heading",
       lineHeight: "heading",
       marginTop: 0,
-      marginBottom: 3
+      marginBottom: 3,
     },
     img: {},
     pre: {
@@ -165,18 +149,18 @@ export default
       code: {
         backgroundColor: "darken",
         color: "text",
-        lineHeight: "body"
-      }
+        lineHeight: "body",
+      },
     },
     ol: {
-      color: "text"
+      color: "text",
     },
     ul: {
-      color: "text"
+      color: "text",
     },
     li: {
       color: "text",
-      lineHeight: "body"
+      lineHeight: "body",
     },
     blockquote: {
       borderLeftColor: "primary",
@@ -185,15 +169,15 @@ export default
       padding: 2,
       backgroundColor: "darken",
       p: {
-        margin: 0
-      }
+        margin: 0,
+      },
     },
     hr: {
       border: 0,
       borderStyle: 0,
       color: "muted",
       marginTop: 5,
-      marginBottom: 5
+      marginBottom: 5,
     },
     em: {},
     table: {
@@ -202,7 +186,7 @@ export default
       borderStyle: 0,
       borderColor: "gray",
       borderCollapse: "collapse",
-      mb: 3
+      mb: 3,
     },
     tr: {},
     th: {
@@ -210,13 +194,13 @@ export default
       border: 0,
       borderStyle: 0,
       borderColor: "gray",
-      padding: 2
+      padding: 2,
     },
     td: {
       border: 0,
       borderStyle: 0,
       borderColor: "gray",
-      padding: 2
+      padding: 2,
     },
     strong: {},
     del: {},
@@ -227,25 +211,25 @@ export default
       color: "primary",
       secondary: {
         backgroundColor: "darken",
-        color: "secondary"
-      }
+        color: "secondary",
+      },
     },
     donut: {
       primary: {
-        color: "primary"
+        color: "primary",
       },
       secondary: {
-        color: "secondary"
-      }
+        color: "secondary",
+      },
     },
     spinner: {
       primary: {
-        color: "primary"
+        color: "primary",
       },
       secondary: {
-        color: "secondary"
-      }
-    }
+        color: "secondary",
+      },
+    },
   },
   box: {},
   flex: {},
@@ -253,93 +237,93 @@ export default
   buttons: {
     backgroundColor: "primary",
     primary: {
-      textTransform: "capitalize"
+      textTransform: "capitalize",
     },
     secondary: {
       textTransform: "capitalize",
       color: "background",
       backgroundColor: "secondary",
-      ":hover" : {
-        color: "background"
-      }
+      ":hover": {
+        color: "background",
+      },
     },
     close: {},
     icon: {},
-    menu: {}
+    menu: {},
   },
   text: {
     text: {},
-    heading: {}
+    heading: {},
   },
   links: {
     nav: {
-      color: "primary"
-    }
+      color: "primary",
+    },
   },
   images: {
-    avatar: {}
+    avatar: {},
   },
   cards: {
     primary: {
       color: "text",
       boxShadow: 0,
-      backgroundColor: "darken"
-    }
+      backgroundColor: "darken",
+    },
   },
   layout: {
-    container: {}
+    container: {},
   },
   forms: {
     label: {
       color: "text",
       alignItems: "center",
       fontWeight: "bold",
-      marginBottom: 2
+      marginBottom: 2,
     },
     input: {
-      color: "text"
+      color: "text",
     },
     select: {
-      color: "text"
+      color: "text",
     },
     textarea: {
-      color: "text"
+      color: "text",
     },
     slider: {
       color: "primary",
-      backgroundColor: "muted"
+      backgroundColor: "muted",
     },
     radio: {},
-    checkbox: {}
+    checkbox: {},
   },
   badges: {
     primary: {
-      backgroundColor: "primary"
+      backgroundColor: "primary",
     },
     secondary: {
       backgroundColor: "secondary",
-      color: "background"
-    }
+      color: "background",
+    },
   },
   alerts: {
     primary: {
-      backgroundColor: "primary"
+      backgroundColor: "primary",
     },
     secondary: {
       backgroundColor: "secondary",
-      color: "background"
-    }
+      color: "background",
+    },
   },
   messages: {
     primary: {
       color: "text",
       backgroundColor: "darken",
-      borderLeftColor: "primary"
+      borderLeftColor: "primary",
     },
     secondary: {
       color: "text",
       backgroundColor: "darken",
-      borderLeftColor: "secondary"
-    }
-  }
-}
+      borderLeftColor: "secondary",
+    },
+  },
+};

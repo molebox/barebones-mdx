@@ -6,11 +6,9 @@ import { ThemeProvider, Box, Flex } from 'theme-ui';
 import theme from './theme';
 
 import Content from './content.mdx'
-// import Box from './components/box';
-// import Flex from './components/flex';
 
 const components = {
-  h1: props => <h1 style={{color: 'tomato'}} {...props} />,
+  // h1: props => <h1 style={{color: 'tomato'}} {...props} />,
   Box,
   Flex
 }
@@ -23,5 +21,5 @@ render(
         </MdxEmbedProvider>
       </ThemeProvider>
   </MDXProvider>,
-  document.querySelector('#demo')
+  document.querySelector('#root')
 )

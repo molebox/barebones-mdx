@@ -2,15 +2,15 @@
   direction="column"
   w="1440px"
   justify="center"
-  p="5"
+  p={3}
   m="0 auto"
 >
 
-## This is page 2
+# This is page 2
 
-##### This is an embedded tweet
+#### This is an embedded tweet. You can embed all sorts of cool things with mdx-embed.
 
-<Box my="5">
+<Box my="2">
   <Tweet
     tweetLink="https://twitter.com/studio_hungry/status/1256343990061936640?s=20"
     align="center"
@@ -18,18 +18,32 @@
   />
 </Box>
 
-##### These are some boxes
-
-<Flex direction="column" w="1440px" my="4">
-  <Flex h="100px" justify="center" align="center" bg="brand.900">
-    This is a box
-  </Flex>
-  <Flex h="100px" justify="center" align="center" bg="brand.800">
-    This is a box
-  </Flex>
-  <Flex h="100px" justify="center" align="center" bg="brand.700">
-    This is a box
-  </Flex>
-</Flex>
+<Grid templateColumns="repeat(3, 1fr)" gap={6} mt={4}>
+  <Box w="100%" h="100px" bg="blue.900" justify="center" align="center">
+    <Text color="white" fontSize="xl">
+      This is a box
+    </Text>
+  </Box>
+  <Box w="100%" h="100px" bg="blue.800" justify="center" align="center">
+    <Text color="white" fontSize="xl">
+      This is a box
+    </Text>
+  </Box>
+  <Box w="100%" h="100px" bg="blue.700" justify="center" align="center">
+    <Text color="white" fontSize="xl">
+      This is a box
+    </Text>
+  </Box>
+  <Box w="100%" h="100px" bg="blue.600" justify="center" align="center">
+    <Text color="white" fontSize="xl">
+      This is a box
+    </Text>
+  </Box>
+  <Box w="100%" h="100px" bg="blue.600" justify="center" align="center">
+    <Text color="white" fontSize="xl">
+      This is a box
+    </Text>
+  </Box>
+</Grid>
 
 </Flex>

@@ -15,6 +15,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import Content from "./pages/index.mdx";
 import PageTwo from "./pages/page-two.mdx";
+import Nav from './components/nav';
 
 const components = {
   h1: (props) => <Text fontSize="6xl">{props.children}</Text>,
@@ -36,14 +37,7 @@ render(
     <ThemeProvider theme={theme}>
       <MdxEmbedProvider>
         <Router>
-          <nav style={{ margin: 10 }}>
-            <Link to="/" style={{ padding: 5 }}>
-              Home
-            </Link>
-            <Link to="/page-two" style={{ padding: 5 }}>
-              Page Two
-            </Link>
-          </nav>
+        <Nav/>
           <Routes>
             <Route path="/" element={<Content />} />
             <Route path="/page-two" element={<PageTwo />} />

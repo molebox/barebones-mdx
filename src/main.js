@@ -9,15 +9,16 @@ import {
   Heading,
   Grid,
   ChakraProvider,
+  Link,
 } from "@chakra-ui/core";
 import theme from "./theme";
 import { MDXRoutes } from "./components/mdx-routes";
 
 const components = {
   h1: (props) => (
-    <Box as="h1" fontSize="6xl">
+    <Text as="h1" fontSize="6xl">
       {props.children}
-    </Box>
+    </Text>
   ),
   h2: (props) => (
     <Text as="h2" fontSize="5xl">
@@ -49,20 +50,16 @@ const components = {
   Box,
   Flex,
   Heading,
-  a: (props) => (
-    <Text as="h6" fontSize="xl">
-      {props.children}
-    </Text>
-  ),
   Grid: (props) => <Grid {...props}>{props.children}</Grid>,
+  Link,
 };
 
 render(
   <MDXProvider components={components}>
     <ChakraProvider theme={theme}>
-    <MdxEmbedProvider>
-      <MDXRoutes/>
-    </MdxEmbedProvider>
+      <MdxEmbedProvider>
+        <MDXRoutes />
+      </MdxEmbedProvider>
     </ChakraProvider>
   </MDXProvider>,
   document.querySelector("#root")

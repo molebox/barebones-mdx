@@ -1,0 +1,38 @@
+import { useState, useEffect } from "react";
+
+<Flex
+  direction="column"
+  w="1440px"
+  justify="center"
+  p={3}
+  m="0 auto"
+>
+
+## Data fetching direct inside this very MDX file
+
+<Link
+  my={5}
+  href="https://johno.com/use-effect-for-fetching-data-in-mdx/"
+  isExternal
+>
+  Example lifted from John Otanders blog
+</Link>
+
+export const PokemonData = () => {
+  const [pokemon, setPokemon] = useState(null);
+  useEffect(() => {
+    const fetchPokemon = () => {
+      fetch("https://pokeapi.co/api/v2/ability/")
+        .then((result) => result.json())
+        .then((data) => setPokemon(data));
+    };
+    fetchPokemon();
+  }, []);
+  if (!pokemon) {
+    return <h1>Fetching pokemon...</h1>;
+  }
+  return <Box as="pre">{JSON.stringify(pokemon, null, 2)}</Box>;
+};
+
+<PokemonData />
+</Flex>

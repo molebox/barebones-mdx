@@ -4,6 +4,8 @@
 
 A barebones MDX project built with [MDX](https://mdxjs.com/) , [Parcel](https://parceljs.org/), [React Router v6](https://reacttraining.com/blog/react-router-v6-pre/) and [Chakra-ui](https://chakra-ui.com/)
 
+The example site can be viewed at [barebones-mdx.netlify.app](https://barebones-mdx.netlify.app/)
+
 #### Some info
 
 - The site is bundled and the build placed in the dist folder

@@ -9,15 +9,9 @@ import {
   Heading,
   Grid,
   ChakraProvider,
-  CSSReset,
 } from "@chakra-ui/core";
 import theme from "./theme";
-// import theme from "@chakra-ui/theme"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import Content from "./pages/index.mdx";
-import PageTwo from "./pages/page-two.mdx";
-import Nav from "./components/nav";
+import { MDXRoutes } from "./components/mdx-routes";
 
 const components = {
   h1: (props) => (
@@ -65,18 +59,11 @@ const components = {
 
 render(
   <MDXProvider components={components}>
+    <ChakraProvider theme={theme}>
     <MdxEmbedProvider>
-      <Router>
-        <ChakraProvider theme={theme}>
-          <CSSReset />
-          <Nav />
-          <Routes>
-            <Route path="/" element={<Content />} />
-            <Route path="/page-two" element={<PageTwo />} />
-          </Routes>
-        </ChakraProvider>
-      </Router>
+      <MDXRoutes/>
     </MdxEmbedProvider>
+    </ChakraProvider>
   </MDXProvider>,
   document.querySelector("#root")
 );

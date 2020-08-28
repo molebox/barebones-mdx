@@ -1,3 +1,6 @@
+export const publicId = "corgi1";
+export const cloudName = "richardhaines";
+
 <Flex
   direction="column"
   w="100%"
@@ -88,6 +91,25 @@
       <Emoji ariaLabel="A triangular ruler" symbol="📐" />
       The base layout of the site can be configured in the MDXLayout component
     </Text>
+  </Box>
+</Flex>
+
+<Flex
+  h="200px"
+  w="200px"
+  bg="brand.background"
+  align="center"
+  justify="center"
+  boxShadow="-3px 3px 0px 1px hsla(0, 0%, 0%, 0.28)"
+>
+  <Box>
+    <CloudinaryImage
+      publicId={publicId}
+      boxSize="200px"
+      // transformations={{ height: 0.2, border: "2px_solid_black" }}
+      cloudName={cloudName}
+      alt="A lazy image"
+    />
   </Box>
 </Flex>
 

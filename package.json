@@ -9,7 +9,8 @@
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "pretty": "prettier --write \"src/**/*.{js,mdx}",
-    "serve": "yarn build && npx serve dist/"
+    "serve": "yarn build && npx serve dist/",
+    "net": "netlify dev"
   },
   "type": "module",
   "dependencies": {
@@ -22,6 +23,7 @@
     "dotenv": "^8.2.0",
     "front-matter": "^4.0.2",
     "history": "^5.0.0",
+    "netlify-cli": "^2.59.1",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

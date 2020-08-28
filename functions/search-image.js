@@ -8,7 +8,6 @@ exports.handler = async (event) => {
   const body = JSON.parse(event.body);
   const res = await cloudinary.search
     .expression(body.expression.expression)
-    .max_results(3)
     .execute()
     .then((result) => result);
   return {

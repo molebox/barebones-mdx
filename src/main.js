@@ -19,7 +19,6 @@ import { MDXRoutes } from "./components/mdx-routes";
 import MDXLayout from "./components/mdx-layout";
 import Emoji from "./components/emoji";
 import CloudinaryImage from "./components/cloudinary-image";
-import config from "./config";
 
 const components = {
   wrapper: (props) => <MDXLayout {...props}>{props.children}</MDXLayout>,
@@ -64,27 +63,25 @@ const components = {
   SimpleGrid,
   Stack,
   Emoji,
-  CloudinaryImage: (props) => <CloudinaryImage {...props} />,
+  CloudinaryImage: props => <CloudinaryImage {...props}/>,
 };
 
 const App = () => {
-  const [configState, setConfigState] = React.useState({});
-  React.useEffect(() => {
-    setConfigState(config);
-    console.log({ config });
-  }, []);
 
   return (
     <MDXProvider components={components}>
-      <MDXProvider components={(config) => components}>
-        <ChakraProvider theme={theme}>
-          <MdxEmbedProvider>
-            <MDXRoutes />
-          </MdxEmbedProvider>
-        </ChakraProvider>
-      </MDXProvider>
+      <MDXProvider>
+    <ChakraProvider theme={theme}>
+      <MdxEmbedProvider>
+        <MDXRoutes />
+      </MdxEmbedProvider>
+    </ChakraProvider>
     </MDXProvider>
-  );
-};
+  </MDXProvider>
+  )
+}
 
-render(<App />, document.querySelector("#root"));
+render(
+  <App/>,
+  document.querySelector("#root")
+);

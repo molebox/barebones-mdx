@@ -27,8 +27,9 @@ function CloudinaryImage({
   borderRadius,
   cloudName,
   alt,
+  secure_url,
 }) {
-  const { generateUrl, url, isLoading, isError, error } = useImage({
+  const { generateUrl, isLoading, isError, error } = useImage({
     cloudName,
   });
   React.useEffect(() => {
@@ -42,10 +43,6 @@ function CloudinaryImage({
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  React.useEffect(() => {
-    console.log({ url });
-  }, [url]);
 
   if (isLoading)
     return (
@@ -62,7 +59,7 @@ function CloudinaryImage({
   if (url !== undefined) {
     return (
       <Image
-        src={url}
+        src={secure_url}
         boxSize={boxSize}
         borderRadius={borderRadius}
         alt={alt}

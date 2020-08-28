@@ -2,18 +2,26 @@ import { useState, useEffect } from "react";
 
 <Flex
   direction="column"
-  w="1440px"
   justify="center"
   p={3}
-  m="0 auto"
+  bg="brand.background"
 >
-
-## Data fetching direct inside this very MDX file
+<Text
+  fontSize="3xl"
+  fontWeight="light"
+  color="brand.text"
+  mt={4}
+  m={[3, 3, null]}
+  align="center"
+>
+Data fetching direct inside this very MDX file
+</Text>
 
 <Link
   my={5}
   href="https://johno.com/use-effect-for-fetching-data-in-mdx/"
   isExternal
+  color="brand.text"
 >
   Example lifted from John Otanders blog
 </Link>
@@ -31,7 +39,11 @@ export const PokemonData = () => {
   if (!pokemon) {
     return <h1>Fetching pokemon...</h1>;
   }
-  return <Box as="pre">{JSON.stringify(pokemon, null, 2)}</Box>;
+  return (
+    <Box as="pre" color="brand.text">
+      {JSON.stringify(pokemon, null, 2)}
+    </Box>
+  );
 };
 
 <PokemonData />

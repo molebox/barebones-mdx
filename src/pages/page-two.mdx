@@ -1,49 +1,40 @@
 <Flex
   direction="column"
-  w="1440px"
+  w="100%"
+  h="500px"
+  bg="brand.background"
   justify="center"
-  p={3}
-  m="0 auto"
+  align="center"
 >
 
-# This is page 2
+<Heading
+  fontSize={["4xl", "4xl", "6xl"]}
+  fontWeight="normal"
+  color="brand.text"
+  m={[3, 3, null]}
+  align="center"
+>
+  This is the second page
+</Heading>
 
-#### This is an embedded tweet. You can embed all sorts of cool things with mdx-embed.
+</Flex>
 
-<Box my="2">
+<Box bg="brand.accent" mt={-10} p={6}>
+  <Text
+  fontSize="3xl"
+  fontWeight="normal"
+  color="brand.background"
+  m={[3, 3, null]}
+  align="center"
+>
+This is an embedded tweet. You can embed all sorts of cool things with mdx-embed.
+</Text>
+
+<Box  bg="brand.accent" minH="500px">
   <Tweet
     tweetLink="https://twitter.com/studio_hungry/status/1256343990061936640?s=20"
     align="center"
-    theme="light"
+    theme="dark"
   />
 </Box>
-
-<Grid templateColumns="repeat(3, 1fr)" gap={6} mt={4}>
-  <Box w="100%" h="100px" bg="blue.900" justify="center" align="center">
-    <Text color="white" fontSize="xl">
-      This is a box
-    </Text>
-  </Box>
-  <Box w="100%" h="100px" bg="blue.800" justify="center" align="center">
-    <Text color="white" fontSize="xl">
-      This is a box
-    </Text>
-  </Box>
-  <Box w="100%" h="100px" bg="blue.700" justify="center" align="center">
-    <Text color="white" fontSize="xl">
-      This is a box
-    </Text>
-  </Box>
-  <Box w="100%" h="100px" bg="blue.600" justify="center" align="center">
-    <Text color="white" fontSize="xl">
-      This is a box
-    </Text>
-  </Box>
-  <Box w="100%" h="100px" bg="blue.600" justify="center" align="center">
-    <Text color="white" fontSize="xl">
-      This is a box
-    </Text>
-  </Box>
-</Grid>
-
-</Flex>
+</Box>

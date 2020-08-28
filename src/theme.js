@@ -5,9 +5,13 @@ export default {
   colors: {
     ...theme.colors,
     brand: {
-      900: "#1a365d",
-      800: "#153e75",
-      700: "#2a69ac",
+      grey: "#f6f5f5",
+      lightBlue: "#145374",
+      darkBlue: "#00334e",
+      peach: "#ee6f57",
+      accent: "#DE3C4B",
+      background: "#121212",
+      text: "#FFFfff",
     },
   },
   fontSizes: {

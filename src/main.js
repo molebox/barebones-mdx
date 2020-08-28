@@ -8,50 +8,60 @@ import {
   Text,
   Heading,
   Grid,
+  SimpleGrid,
+  Stack,
   ChakraProvider,
   Link,
+  Image,
 } from "@chakra-ui/core";
 import theme from "./theme";
 import { MDXRoutes } from "./components/mdx-routes";
+import MDXLayout from "./components/mdx-layout";
+import Emoji from "./components/emoji";
 
 const components = {
+  wrapper: (props) => <MDXLayout {...props}>{props.children}</MDXLayout>,
   h1: (props) => (
-    <Text as="h1" fontSize="6xl">
+    <Text as="h1" fontSize="6xl" {...props}>
       {props.children}
     </Text>
   ),
   h2: (props) => (
-    <Text as="h2" fontSize="5xl">
+    <Text as="h2" fontSize="5xl" {...props}>
       {props.children}
     </Text>
   ),
   h3: (props) => (
-    <Text as="h3" fontSize="4xl">
+    <Text as="h3" fontSize="4xl" {...props}>
       {props.children}
     </Text>
   ),
   h4: (props) => (
-    <Text as="h4" fontSize="3xl">
+    <Text as="h4" fontSize="3xl" {...props}>
       {props.children}
     </Text>
   ),
   h5: (props) => (
-    <Text as="h5" fontSize="2xl">
+    <Text as="h5" fontSize="2xl" {...props}>
       {props.children}
     </Text>
   ),
   h6: (props) => (
-    <Text as="h6" fontSize="xl">
+    <Text as="h6" fontSize="xl" {...props}>
       {props.children}
     </Text>
   ),
-  p: (props) => <Text>{props.children}</Text>,
+  p: (props) => <Text {...props}>{props.children}</Text>,
   Text,
   Box,
   Flex,
   Heading,
   Grid: (props) => <Grid {...props}>{props.children}</Grid>,
   Link,
+  Image,
+  SimpleGrid,
+  Stack,
+  Emoji,
 };
 
 render(

@@ -13,5 +13,5 @@ const __dirname = Path.resolve();
   
     // Run the bundler, this returns the main bundle
     // Use the events if you're using watch mode as this promise will only trigger once and not for every rebuild
-    const bundle = await bundler.bundle();
+    await bundler.bundle();
   })();

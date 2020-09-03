@@ -5,11 +5,11 @@
   "author": "HAINES-DESKTOP\\richa <richardkhaines@hotmail.co.uk>",
   "private": true,
   "scripts": {
-    "preBuild": "shx rm -rf dist/*",
+    "preBuild": "shx rm -rf public/*",
     "start": "parcel index.html",
     "build": "node bundle.js",
     "pretty": "prettier --write \"src/**/*.{js,mdx}",
-    "serve": "yarn build && npx serve dist/",
+    "serve": "yarn build && npx serve public/",
     "net": "netlify dev"
   },
   "type": "module",

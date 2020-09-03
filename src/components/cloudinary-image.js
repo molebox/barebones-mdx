@@ -63,7 +63,7 @@ function CloudinaryImage({
         boxSize={boxSize}
         borderRadius={borderRadius}
         alt={alt}
-        // fallbackSrc={`https://via.placeholder.com/${boxSize}`}
+        fallbackSrc={`https://via.placeholder.com/${boxSize}`}
       />
     );
   }

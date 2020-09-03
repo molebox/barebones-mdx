@@ -70,13 +70,11 @@ const App = () => {
 
   return (
     <MDXProvider components={components}>
-      <MDXProvider>
     <ChakraProvider theme={theme}>
       <MdxEmbedProvider>
         <MDXRoutes />
       </MdxEmbedProvider>
     </ChakraProvider>
-    </MDXProvider>
   </MDXProvider>
   )
 }
